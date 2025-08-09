@@ -6,21 +6,13 @@ This project extends the functionality of a prefix tree (Trie) by implementing t
 - **has_prefix(prefix)** — checks whether there exists at least one word in the Trie that starts with the given prefix `prefix`.
 
 
-## Requirements
+## Technical Requirements
 
 - Class `Homework` inherits from `Trie`.
 - Input parameters are strings; invalid types raise exceptions.
 - Methods must be case-sensitive.
 - Efficient for large datasets.
 
-
-## Acceptance Criteria
-
-1. `count_words_with_suffix(pattern)` returns the number of words that end with the exact suffix `pattern`. If no such words exist, it returns 0. It is case-sensitive.  
-2. `has_prefix(prefix)` returns `True` if there is at least one word starting with the exact prefix `prefix`. Otherwise, it returns `False`. It is case-sensitive.  
-3. The code passes all tests.  
-4. Incorrect input types are properly handled with exceptions.  
-5. The methods work efficiently with large datasets.
 
 ## Running the Program
 
@@ -30,3 +22,23 @@ python functionality_expansion.py
 ```
 ---
 
+# Task 2. Longest Common Prefix Search
+
+## Description
+
+Create a class `LongestCommonWord` that inherits from the `Trie` class and implements the method `find_longest_common_word`, which finds the longest common prefix among all the words in the input array of strings `strings`.
+
+## Technical Requirements
+
+- The class `LongestCommonWord` must inherit from `Trie`.
+- The input parameter of the method `find_longest_common_word`, `strings`, is an array of strings.
+- The method `find_longest_common_word` should return a string — the longest common prefix.
+- Time complexity — **O(S)**, where **S** is the total length of all strings.
+
+
+## Running the Program
+
+```bash
+cd longest_common
+python longest_common.py
+```
